@@ -37,7 +37,7 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 async function pushplus(title: string, content: string): Promise<void> {
   if (!PUSHPLUS_TOKEN) return;
   try {
-    const res = await fetch("http://www.pushplus.plus/send", {
+    const res = await fetch("https://api.day.app/xHCupjxBDpGjSAgm6tFHu8", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ token: PUSHPLUS_TOKEN, title, content, template: "html" })
