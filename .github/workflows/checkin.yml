@@ -29,7 +29,7 @@ jobs:
       - name: Run check-in
         run: pnpm run checkin
         env:
-          BASE_URL: "https://sign.qaq.al"
+          BASE_URL: "https://aisign.td.ee"
           TIER: "4"
           MODE: "full"
           MIN_SUBMIT_DELAY_MS: "60000"
